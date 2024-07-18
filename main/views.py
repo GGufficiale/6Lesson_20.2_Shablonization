@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from main.models import Student
 
 
 def index(request):
@@ -6,7 +7,7 @@ def index(request):
     context = {
         'object_list': student_list
     }
-    return render(request, 'main/index.html')
+    return render(request, 'main/index.html', context)
 
 # def index(request):
 #     if request.method == 'POST':
