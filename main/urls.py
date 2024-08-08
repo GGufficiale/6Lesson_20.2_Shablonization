@@ -6,6 +6,6 @@ from main.views import index, contact
 app_name = MainConfig.name
 
 urlpatterns = [
-    path('', name='index'),
+    path('', contact, name='index'),
     path('contact/', contact, name='contact'),
 ]
